@@ -14,6 +14,7 @@ config:
   key_field: ip
   key_type: ip
   refresh_schedule: "0 * * * *"
+changelog: "Improved parsing reliability for exit node list format changes"
 tags:
   - tor
   - anonymization
