@@ -1,0 +1,19 @@
+name: URLhaus
+slug: urlhaus
+category: agent
+description: "Malicious URL and domain lookup from abuse.ch URLhaus"
+icon: globe
+author: NanoSIEM
+version: 1
+requires_credential: none
+credential_fields: []
+allowed_domains:
+  - urlhaus-api.abuse.ch
+config:
+  artifact_types: [url, domain]
+  trigger: always
+  rate_limit_per_min: 60
+  rate_limit_per_day: 10000
+tags:
+  - threat-intel
+  - malicious-url

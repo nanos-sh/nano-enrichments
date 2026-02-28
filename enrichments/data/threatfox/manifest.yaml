@@ -1,0 +1,25 @@
+name: ThreatFox IOC Feed
+slug: threatfox
+category: data
+description: "Threat intelligence IOC feed from abuse.ch ThreatFox — IPs, domains, URLs, and hashes"
+icon: shield-alert
+author: NanoSIEM
+version: 1
+requires_credential: optional
+credential_fields:
+  - name: API_KEY
+    label: API Key
+    field_type: secret
+    required: false
+    help: "Optional — increases rate limits. Get at https://threatfox.abuse.ch/api/"
+allowed_domains:
+  - threatfox-api.abuse.ch
+config:
+  key_field: ioc_value
+  key_type: ip
+  is_ioc: true
+  refresh_schedule: "0 */6 * * *"
+tags:
+  - threat-intel
+  - ioc
+  - abuse.ch

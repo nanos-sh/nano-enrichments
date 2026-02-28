@@ -1,0 +1,24 @@
+name: AbuseIPDB
+slug: abuseipdb
+category: agent
+description: "IP address reputation and abuse reports from AbuseIPDB"
+icon: shield-alert
+author: NanoSIEM
+version: 1
+requires_credential: required
+credential_fields:
+  - name: API_KEY
+    label: API Key
+    field_type: secret
+    required: true
+    help: "Get your key at https://www.abuseipdb.com/account/api"
+allowed_domains:
+  - api.abuseipdb.com
+config:
+  artifact_types: [ip]
+  trigger: always
+  rate_limit_per_min: 60
+  rate_limit_per_day: 1000
+tags:
+  - threat-intel
+  - ip-reputation

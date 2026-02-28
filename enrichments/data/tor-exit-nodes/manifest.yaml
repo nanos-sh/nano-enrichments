@@ -1,0 +1,19 @@
+name: Tor Exit Nodes
+slug: tor-exit-nodes
+category: data
+description: "List of known Tor exit node IP addresses, updated hourly"
+icon: globe
+author: NanoSIEM
+version: 1
+requires_credential: none
+credential_fields: []
+allowed_domains:
+  - check.torproject.org
+config:
+  key_field: ip
+  key_type: ip
+  refresh_schedule: "0 * * * *"
+tags:
+  - tor
+  - anonymization
+  - ip-list

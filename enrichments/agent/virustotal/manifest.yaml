@@ -1,0 +1,25 @@
+name: VirusTotal
+slug: virustotal
+category: agent
+description: "Multi-engine malware scanning and threat intelligence for IPs, domains, hashes, and URLs"
+icon: shield-alert
+author: NanoSIEM
+version: 1
+requires_credential: required
+credential_fields:
+  - name: API_KEY
+    label: API Key
+    field_type: secret
+    required: true
+    help: "Get your key at https://www.virustotal.com/gui/my-apikey"
+allowed_domains:
+  - www.virustotal.com
+config:
+  artifact_types: [ip, domain, hash, url]
+  trigger: always
+  rate_limit_per_min: 4
+  rate_limit_per_day: 500
+tags:
+  - threat-intel
+  - malware
+  - multi-engine
