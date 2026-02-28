@@ -2,8 +2,8 @@ name: GreyNoise
 slug: greynoise
 category: agent
 description: "Classify IPs as internet noise, benign services, or malicious scanners"
-icon: bot
-author: NanoSIEM
+icon: radar
+author: nano
 version: 1
 requires_credential: required
 credential_fields:
@@ -15,6 +15,7 @@ credential_fields:
 allowed_domains:
   - api.greynoise.io
 config:
+  color: emerald
   artifact_types: [ip]
   trigger: always
   rate_limit_per_min: 50

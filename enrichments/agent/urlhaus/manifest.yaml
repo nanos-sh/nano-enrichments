@@ -2,14 +2,15 @@ name: URLhaus
 slug: urlhaus
 category: agent
 description: "Malicious URL and domain lookup from abuse.ch URLhaus"
-icon: globe
-author: NanoSIEM
+icon: shield
+author: nano
 version: 1
 requires_credential: none
 credential_fields: []
 allowed_domains:
   - urlhaus-api.abuse.ch
 config:
+  color: orange
   artifact_types: [url, domain]
   trigger: always
   rate_limit_per_min: 60

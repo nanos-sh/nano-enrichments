@@ -2,8 +2,8 @@ name: OTX AlienVault
 slug: otx
 category: agent
 description: "Threat intelligence IOC correlation via OTX AlienVault pulses"
-icon: shield-alert
-author: NanoSIEM
+icon: zap
+author: nano
 version: 1
 requires_credential: required
 credential_fields:
@@ -15,6 +15,7 @@ credential_fields:
 allowed_domains:
   - otx.alienvault.com
 config:
+  color: purple
   artifact_types: [ip, domain, hash, url]
   trigger: always
   rate_limit_per_min: 60

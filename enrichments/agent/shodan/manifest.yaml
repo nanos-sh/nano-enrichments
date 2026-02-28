@@ -2,8 +2,8 @@ name: Shodan
 slug: shodan
 category: agent
 description: "IP and host reconnaissance — ports, vulnerabilities, services"
-icon: globe
-author: NanoSIEM
+icon: search
+author: nano
 version: 1
 requires_credential: required
 credential_fields:
@@ -15,6 +15,7 @@ credential_fields:
 allowed_domains:
   - api.shodan.io
 config:
+  color: red
   artifact_types: [ip, domain]
   trigger: always
   rate_limit_per_min: 1

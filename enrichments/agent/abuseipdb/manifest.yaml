@@ -2,8 +2,8 @@ name: AbuseIPDB
 slug: abuseipdb
 category: agent
 description: "IP address reputation and abuse reports from AbuseIPDB"
-icon: shield-alert
-author: NanoSIEM
+icon: shield
+author: nano
 version: 1
 requires_credential: required
 credential_fields:
@@ -15,6 +15,7 @@ credential_fields:
 allowed_domains:
   - api.abuseipdb.com
 config:
+  color: red
   artifact_types: [ip]
   trigger: always
   rate_limit_per_min: 60

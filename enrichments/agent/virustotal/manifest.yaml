@@ -2,8 +2,8 @@ name: VirusTotal
 slug: virustotal
 category: agent
 description: "Multi-engine malware scanning and threat intelligence for IPs, domains, hashes, and URLs"
-icon: shield-alert
-author: NanoSIEM
+icon: shield
+author: nano
 version: 1
 requires_credential: required
 credential_fields:
@@ -15,6 +15,7 @@ credential_fields:
 allowed_domains:
   - www.virustotal.com
 config:
+  color: blue
   artifact_types: [ip, domain, hash, url]
   trigger: always
   rate_limit_per_min: 4

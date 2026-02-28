@@ -2,8 +2,8 @@ name: ThreatFox IOC Feed
 slug: threatfox
 category: data
 description: "Threat intelligence IOC feed from abuse.ch ThreatFox — IPs, domains, URLs, and hashes"
-icon: shield-alert
-author: NanoSIEM
+icon: shield
+author: nano
 version: 1
 requires_credential: optional
 credential_fields:
@@ -15,6 +15,7 @@ credential_fields:
 allowed_domains:
   - threatfox-api.abuse.ch
 config:
+  color: orange
   key_field: ioc_value
   key_type: ip
   is_ioc: true
