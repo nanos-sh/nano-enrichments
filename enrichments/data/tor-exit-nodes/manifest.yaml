@@ -4,7 +4,7 @@ category: data
 description: "List of known Tor exit node IP addresses, updated hourly"
 icon: globe
 author: nano
-version: 1
+version: 2
 requires_credential: none
 credential_fields: []
 allowed_domains:
